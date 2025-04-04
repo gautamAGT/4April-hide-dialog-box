@@ -10,14 +10,14 @@ codeunit 50530 "Auto Ship & Invoice"
     begin
         if SalesHeader."Document Type" = SalesHeader."Document Type"::Order then begin
 
-            DefaultOption := 3;
+            //DefaultOption := 3;
 
             SalesHeader.Ship := true;
             SalesHeader.Invoice := true;
 
             HideDialog := true;
 
-            IsHandled := false;
+            //IsHandled := false;
         end;
     end;
 }
